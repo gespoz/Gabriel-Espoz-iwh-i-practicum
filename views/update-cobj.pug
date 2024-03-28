@@ -1,0 +1,20 @@
+html(lang="en")
+    head
+        title Update Custom Object Form | Integrating With HubSpot I Practicum.
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper 
+            br
+            h1 Update Custom Object Form
+            br
+            a(href='/') Return to the homepage
+            br
+            br
+            form(method="POST")
+                label(for="nombre") Videogame Name
+                input(type="text" name="nombre" required)
+                label(for="developer") Developer
+                input(type="text" name="developer" required)
+                label(for="publisher") Publisher
+                input(type="text" name="publisher" required)
+                input(type="submit" value="Submit")

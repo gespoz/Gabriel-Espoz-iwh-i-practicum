@@ -1,0 +1,28 @@
+//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
+
+doctype html
+html 
+     head 
+         title= `${title}`
+         meta(name="viewport" content="width=device-width, initial-scale=1")
+         link(rel="stylesheet", href="/css/style.css")
+     body    
+        .container 
+            br
+            h1 Custom Object Table
+            br
+            a(href='/update-cobj') Add/Update this table
+            br 
+            br
+            table
+                thead
+                    tr
+                        th Name
+                        th Developer
+                        th Publisher
+                tbody
+                    each game in data
+                        tr
+                            td #{game.properties.nombre}
+                            td #{game.properties.developer}
+                            td #{game.properties.publisher}

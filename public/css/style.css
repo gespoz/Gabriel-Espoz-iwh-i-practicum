@@ -7,7 +7,7 @@ body, * {
 }
 
 h1 {
-    margin: 1rem;
+    margin: auto;
 }
 
 .cards {
@@ -55,4 +55,41 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(238, 209, 155); 
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid #000000; 
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; 
+    }
+    
+    table {
+        width: 100%; 
+    }
 }
